@@ -8,6 +8,7 @@ import grainImage from '../assets/images/grain.jpg';
 import StarIcon from '../assets/icons/star.svg';
 import SparkleIcon from '../assets/icons/sparkle.svg';
 import { HeroOrbit } from '../components/HeroOrbit';
+import { MagicButton } from '@/components/MagicButton';
 
 export const HeroSection: React.FC = () => {
   const handleScroll = (id: string) => {
@@ -78,18 +79,21 @@ export const HeroSection: React.FC = () => {
           <p className="mt-4 text-center text-white/60 md:text-lg">I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button
+          <MagicButton onClick={() => handleScroll('#projects')}><span className="font-semibold">Explore My Work</span>
+            <ArrowDown className="size-4" />
+          </MagicButton>
+          {/* <button
             type="button"
             onClick={() => handleScroll('#projects')}
             className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-30"
           >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
+          </button> */}
           <button
             type="button"
             onClick={() => handleScroll('#contact')}
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-30"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-4 h-12 rounded-xl z-30"
           >
             <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>

@@ -3,6 +3,7 @@ import { Inter, Calistoga } from 'next/font/google';
 import './globals.css';
 import { twMerge } from 'tailwind-merge';
 import React from 'react';
+// import memojiImage from '../assets/images/memoji-computer.png';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const calistoga = Calistoga({
@@ -22,6 +23,13 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => (
   <html lang="en">
+    <meta name="description" content="Raed Masri is a full-stack web developer specializing in building high-performance websites and applications. Explore his portfolio showcasing expertise in front-end and back-end development, UI/UX design, and scalable web solutions." />
+    <meta name="keywords" content="Raed Masri, full-stack web developer, front-end, back-end, web development, JavaScript, TypeScript, React, Node.js, Next.js, web applications, UI/UX design, scalable solutions" />
+    <meta property="og:title" content="Raed Masri | Full-Stack Web Developer" />
+    <meta property="og:description" content="Explore my portfolio showcasing high-performance websites and scalable web solutions." />
+    <meta property="og:image" content="https://raed-elmasri.netlify.app/memoji-computer.png" />
+    <meta property="og:url" content="https://raed-elmasri.netlify.app" />
+
     <body
       className={twMerge(
         inter.variable,
