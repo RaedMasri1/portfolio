@@ -27,7 +27,7 @@ const RootLayout = ({
     <meta name="keywords" content="Raed Masri, full-stack web developer, front-end, back-end, web development, JavaScript, TypeScript, React, Node.js, Next.js, web applications, UI/UX design, scalable solutions" />
     <meta property="og:title" content="Raed Masri | Full-Stack Web Developer" />
     <meta property="og:description" content="Explore my portfolio showcasing high-performance websites and scalable web solutions." />
-    <meta property="og:image" content="logo.jpeg" />
+    <meta property="og:image" content="../assets/images/logo.jpeg" />
     <meta property="og:url" content="https://raed-elmasri.netlify.app" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="logo.svg" />
