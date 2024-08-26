@@ -8,7 +8,7 @@ import grainImage from '../assets/images/grain.jpg';
 import StarIcon from '../assets/icons/star.svg';
 import SparkleIcon from '../assets/icons/sparkle.svg';
 import { HeroOrbit } from '../components/HeroOrbit';
-import { MagicButton } from '@/components/MagicButton';
+import { MagicButton } from '../components/MagicButton';
 
 export const HeroSection: React.FC = () => {
   const handleScroll = (id: string) => {
