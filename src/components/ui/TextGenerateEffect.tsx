@@ -4,10 +4,11 @@
 
 import { useEffect } from 'react';
 import { motion, stagger, useAnimate } from 'framer-motion';
-import { cn } from '../../../lib/utils';
+// import { cn } from '../../../lib/utils';
 
 export const TextGenerateEffect = ({
   words,
+  // eslint-disable-next-line no-unused-vars
   className,
   filter = true,
   duration = 0.5,
@@ -31,7 +32,8 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       },
     );
-  }, [scope.current]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope.current, duration, filter, animate]);
 
   const renderWords = () => (
     <motion.div ref={scope}>

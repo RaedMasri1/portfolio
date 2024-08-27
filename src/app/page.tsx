@@ -8,7 +8,6 @@ import { ContactSection } from '../sections/Contact';
 import { Footer } from '../sections/Footer';
 import { FloatingNavbar } from '../components/FloatingNavbar';
 
-
 const Home = () => {
   const navItems = [
     { name: 'Home', link: '#home' },
