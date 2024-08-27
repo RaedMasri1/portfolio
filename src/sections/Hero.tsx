@@ -10,6 +10,8 @@ import SparkleIcon from '../assets/icons/sparkle.svg';
 import { HeroOrbit } from '../components/HeroOrbit';
 import { MagicButton } from '../components/MagicButton';
 
+import { TextGenerateEffect } from '../components/ui/TextGenerateEffect';
+
 export const HeroSection: React.FC = () => {
   const handleScroll = (id: string) => {
     const targetElement = document.querySelector(id);
@@ -20,6 +22,8 @@ export const HeroSection: React.FC = () => {
       });
     }
   };
+  //   const words = ['better', 'cute', 'beautiful', 'modern'];
+  const words = 'Building Exceptional User Experiences';
   return (
     <div id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
@@ -75,14 +79,21 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Building Exceptional User Experiences</h1>
+          {/* <div className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Building
+            <FlipWords words={words} />
+            <br />
+            User Experiences
+          </div> */}
+          <TextGenerateEffect duration={1} words={words} />
+
           <p className="mt-4 text-center text-white/60 md:text-lg">I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.</p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <MagicButton onClick={() => handleScroll('#projects')}><span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </MagicButton>
-          {/* <button
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <MagicButton onClick={() => handleScroll('#projects')}><span className="font-semibold">Explore My Work</span>
+          <ArrowDown className="size-4" />
+        </MagicButton>
+        {/* <button
             type="button"
             onClick={() => handleScroll('#projects')}
             className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-30"
@@ -90,16 +101,16 @@ export const HeroSection: React.FC = () => {
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button> */}
-          <button
-            type="button"
-            onClick={() => handleScroll('#contact')}
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-4 h-12 rounded-xl z-30"
-          >
-            <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => handleScroll('#contact')}
+          className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-4 h-12 rounded-xl z-30"
+        >
+          <span>👋</span>
+          <span className="font-semibold">Let&apos;s Connect</span>
+        </button>
       </div>
     </div>
+
   );
 };
