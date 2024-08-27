@@ -47,7 +47,7 @@ const portfolioProjects = [
   },
 ];
 
-export const ProjectsSection = () => (
+const ProjectsSection = () => (
   <section id="projects" className="pb-16 lg:py-24">
     <div className="container">
       <SectionHeader
@@ -99,3 +99,5 @@ export const ProjectsSection = () => (
     </div>
   </section>
 );
+
+export default ProjectsSection;

@@ -10,9 +10,9 @@ import SparkleIcon from '../assets/icons/sparkle.svg';
 import { HeroOrbit } from '../components/HeroOrbit';
 import { MagicButton } from '../components/MagicButton';
 
-import { TextGenerateEffect } from '../components/ui/TextGenerateEffect';
+// import { TextGenerateEffect } from '../components/ui/TextGenerateEffect';
 
-export const HeroSection: React.FC = () => {
+const HeroSection: React.FC = () => {
   const handleScroll = (id: string) => {
     const targetElement = document.querySelector(id);
     if (targetElement) {
@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
     }
   };
   //   const words = ['better', 'cute', 'beautiful', 'modern'];
-  const words = 'Building Exceptional User Experiences';
+  //   const words = 'Building Exceptional User Experiences';
   return (
     <div id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
@@ -79,12 +79,9 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          {/* <div className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Building
-            <FlipWords words={words} />
-            <br />
-            User Experiences
-          </div> */}
-          <TextGenerateEffect duration={1} words={words} />
+          <div className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Building Exceptional User Experiences
+          </div>
+          {/* <TextGenerateEffect duration={1} words={words} /> */}
 
           <p className="mt-4 text-center text-white/60 md:text-lg">I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.</p>
         </div>
@@ -114,3 +111,5 @@ export const HeroSection: React.FC = () => {
 
   );
 };
+
+export default HeroSection;

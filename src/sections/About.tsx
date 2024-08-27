@@ -145,7 +145,7 @@ const hobbies = [
     top: '65%',
   },
 ];
-export const AboutSection = () => {
+const AboutSection = () => {
   const constraintRef = useRef(null);
   return (
     <div id="about" className="py-20 lg:py-28">
@@ -207,3 +207,5 @@ export const AboutSection = () => {
     </div>
   );
 };
+
+export default AboutSection;

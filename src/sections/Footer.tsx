@@ -16,7 +16,7 @@ const footerLinks = [
   },
 ];
 
-export const Footer = () => (
+const Footer = () => (
   <footer className="relative overflow-x-clip"> {/* Removed -z-10 */}
     <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10" />
     <div className="container relative"> {/* Added relative positioning here */}
@@ -34,3 +34,5 @@ export const Footer = () => (
     </div>
   </footer>
 );
+
+export default Footer;
