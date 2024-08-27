@@ -33,7 +33,7 @@ export const TextGenerateEffect = ({
       },
     );
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope.current, duration, filter, animate]);
+  }, [scope.current]);
 
   const renderWords = () => (
     <motion.div ref={scope}>
