@@ -1,5 +1,6 @@
 // import { useRouter } from 'next/router';
 // import { TypewriterEffect } from '../components/ui/TypeWriterEffect';
+import Link from 'next/link';
 import ArrowUpRightIcon from '../assets/icons/arrow-up-right.svg';
 import grainImage from '../assets/images/grain.jpg';
 
@@ -45,12 +46,19 @@ const ContactSection = () => (
             </p>
           </div>
           <div>
-            <button type="button" className="text-white bg-gray-900 inline-flex items-center md:text-left px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+            {/* <button type="button" className="text-white bg-gray-900 inline-flex items-center md:text-left px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
               <a href="mailto:raed.k.elmasri@gmail.com">
                 <span className="font-semibold">Contact Me</span>
               </a>
               <ArrowUpRightIcon className="size-4" />
-            </button>
+            </button> */}
+            <Link
+              className="text-white bg-gray-900 inline-flex items-center md:text-left px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
+              href="/contact"
+            >
+              <span className="font-semibold">Contact Me</span>
+              <ArrowUpRightIcon className="size-4" />
+            </Link>
           </div>
         </div>
       </div>

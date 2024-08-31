@@ -7,6 +7,7 @@ import ArrowUpRightIcon from '../assets/icons/arrow-up-right.svg';
 // import grainImage from '../assets/images/grain.jpg';
 import { SectionHeader } from '../components/SectionHeader';
 import { Card } from '../components/Card';
+// import CardProjects from '../components/CardProjects';
 
 const portfolioProjects = [
   {
@@ -55,7 +56,7 @@ const ProjectsSection = () => (
         title="Featured Projects"
         description="See How I transformed concepts into engaging digital experiences."
       />
-      <div className="flex flex-col mt-10 gap-20 md:mt-20">
+      <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
         {portfolioProjects.map((project, projectIndex) => (
           <Card
             key={project.title}

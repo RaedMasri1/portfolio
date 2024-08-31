@@ -21,6 +21,17 @@ const config: Config = {
       },
     },
     extend: {
+      colors: {
+        primary: '#050816',
+        secondary: '',
+        tertiary: 'rgba(71, 64, 82, 0.2)',
+        'black-100': '#100d25',
+        'black-200': '#090325',
+        'white-100': '#f3f3f3',
+      },
+      boxShadow: {
+        card: '0px 35px 120px -15px #211e35',
+      },
       fontFamily: {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)',
@@ -30,6 +41,7 @@ const config: Config = {
         'move-left': 'move-left 1s linear infinite',
         'move-right': 'move-right 1s linear infinite',
         shimmer: 'shimmer 2s linear infinite',
+        'border-spin': 'border-spin 7s linear infinite',
       },
       keyframes: {
         'ping-large': {
@@ -42,6 +54,11 @@ const config: Config = {
         'move-right': {
           '0%': { transform: 'translateX(-50%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
         },
         shimmer: {
           from: {

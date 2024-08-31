@@ -10,10 +10,32 @@
     .hero-ring{
         @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
     }
+
 }
 
 @layer utilities{
     .container{
         @apply lg:max-w-5xl
     }
+
+    /* Act as a border */
+  /* .card-wrapper {
+    @apply relative overflow-hidden rounded-3xl bg-gray-800;
+  } */
+
+  /* Gradient */
+  /* .card-wrapper::before {
+    background: conic-gradient(
+      rgba(244, 114, 182, 0.4) 0deg,
+      rgba(192, 132, 252, 0.4) 0deg,
+      transparent 80deg
+    );
+
+    @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
+  } */
+
+  /* Body */
+  /* .card-content {
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-3xl bg-gray-950;
+  } */
 }
