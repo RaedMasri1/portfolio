@@ -9,14 +9,12 @@ import { cn } from '../../../lib/utils';
 export const TypewriterEffect = ({
   words,
   className,
-  cursorClassName,
 }: {
   words: {
     text: string;
     className?: string;
   }[];
   className?: string;
-  cursorClassName?: string;
 }) => {
   // split text inside of words into array of characters
   const wordsArray = words.map((word) => ({
@@ -36,7 +34,7 @@ export const TypewriterEffect = ({
           width: 'fit-content',
         },
         {
-          duration: 0.3,
+          duration: 0.1,
           delay: stagger(0.1),
           ease: 'easeInOut',
         },
@@ -73,23 +71,6 @@ export const TypewriterEffect = ({
       )}
     >
       {renderWords()}
-      <motion.span
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.8,
-          repeat: Infinity,
-          repeatType: 'reverse',
-        }}
-        className={cn(
-          'inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-gray-900',
-          cursorClassName,
-        )}
-      />
     </div>
   );
 };

@@ -9,7 +9,7 @@ const ProjectsSection = () => (
     className="pb-16 lg:py-24"
     style={{
       minHeight: `calc(100vh * ${portfolioProjects.length})`, // Ensure the section is tall enough for all projects
-      paddingBottom: 'calc(110vh / 2)',
+      paddingBottom: 'calc(100vh / 2)',
     }}
   >
     <div className="container">
