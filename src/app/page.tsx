@@ -4,7 +4,7 @@ import Header from '../sections/Header';
 
 // Lazy load sections
 const HeroSection = React.lazy(() => import('../sections/Hero'));
-const ProjectsSection = React.lazy(() => import('../sections/Projects'));
+const ProjectsSection = React.lazy(() => import('../sections/ProjectsSection'));
 const TapeSection = React.lazy(() => import('../sections/Tape'));
 const TestimonialsSection = React.lazy(() => import('../sections/Testimonials'));
 const AboutSection = React.lazy(() => import('../sections/About'));
